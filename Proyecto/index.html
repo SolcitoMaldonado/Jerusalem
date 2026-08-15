@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Química Jerusalén | Precios mayorista y minorista</title>
+<meta name="description" content="Catálogo online de Química Jerusalén: artículos de limpieza para tu hogar o negocio en San Francisco Solano. Precios mayorista y minorista, pedidos por WhatsApp.">
+<link rel="icon" type="image/jpeg" href="logo-original.jpg">
+
+<style>
+:root{
+  --blue:#2b75c9;--blue-dark:#0e2a5a;--blue-light:#eaf3fb;--gold:#d99a1b;
+  --cream:#eef4fb;--text:#18243a;--muted:#667085;--white:#fff;--border:#dfe8f2;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:248px}
+body{margin:0;font-family:Cambria,"Georgia","Times New Roman",serif;color:var(--text);background:var(--cream);
+background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='260'%20height='260'%20viewBox='0%200%20260%20260'%3E%3Cg%20fill='none'%20stroke='%232b75c9'%20stroke-opacity='0.12'%20stroke-width='1.8'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cg%20transform='translate(38,46)'%3E%3Ccircle%20r='15'/%3E%3Ccircle%20cx='11'%20cy='-10'%20r='4.5'/%3E%3C/g%3E%3Cg%20transform='translate(215,62)'%3E%3Cpath%20d='M0%20-18%20C%2013%202%2013%2012%200%2016%20C%20-13%2012%20-13%202%200%20-18%20Z'/%3E%3C/g%3E%3Cg%20transform='translate(34,172)'%3E%3Crect%20width='48'%20height='26'%20rx='8'/%3E%3Cline%20x1='8'%20y1='13'%20x2='40'%20y2='13'/%3E%3C/g%3E%3Cg%20transform='translate(150,150)'%3E%3Crect%20width='52'%20height='34'%20rx='7'/%3E%3Ccircle%20cx='12'%20cy='14'%20r='3.5'/%3E%3Ccircle%20cx='28'%20cy='24'%20r='3.5'/%3E%3Ccircle%20cx='42'%20cy='12'%20r='3.5'/%3E%3C/g%3E%3Cg%20transform='translate(196,212)'%3E%3Crect%20width='28'%20height='44'%20rx='5'/%3E%3Crect%20x='8'%20y='-12'%20width='12'%20height='14'%20rx='3'/%3E%3Crect%20x='3'%20y='-22'%20width='22'%20height='12'%20rx='6'/%3E%3C/g%3E%3Ccircle%20cx='120'%20cy='40'%20r='6'/%3E%3Ccircle%20cx='78'%20cy='96'%20r='10'/%3E%3Ccircle%20cx='88'%20cy='85'%20r='3'/%3E%3C/g%3E%3C/svg%3E"),radial-gradient(circle at 10% 20%,rgba(43,117,201,.045) 0 2px,transparent 3px),radial-gradient(circle at 80% 12%,rgba(217,154,27,.035) 0 2px,transparent 3px),linear-gradient(30deg,transparent 49.7%,rgba(43,117,201,.018) 50%,transparent 50.3%),linear-gradient(150deg,transparent 49.7%,rgba(14,42,90,.018) 50%,transparent 50.3%);background-size:260px 260px,190px 190px,240px 240px,95px 95px,120px 120px}
+button,input{font:inherit}button{cursor:pointer}
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(224,236,250,.55);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:background .5s ease,box-shadow .5s ease}
+body{padding-top:240px}
+.nav{max-width:1180px;height:240px;margin:auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;position:relative;transition:height .3s ease}
+.logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;z-index:2;pointer-events:auto}
+.logo img{width:230px;height:230px;display:block;border-radius:50%;object-fit:cover;transition:transform .3s ease;transform:scale(1)}
+.logo:hover img{transform:scale(1.025)}
+.navlinks{display:flex;gap:20px;align-items:center}
+.navlinks a{text-decoration:none;color:#0e2a5a;font-size:14px;font-weight:700;border:1px solid rgba(14,42,90,.14);background:rgba(255,255,255,.55);border-radius:999px;padding:9px 16px;transition:all .2s}
+.navlinks a:hover{color:var(--blue);border-color:rgba(43,117,201,.4);background:#fff}
+body.header-shrunk .nav{height:120px}
+body.header-shrunk .logo img{transform:scale(.478)}
+body.header-shrunk .navlinks a{padding:7px 12px;font-size:12px}
+body.header-shrunk .cart-btn{padding:8px 11px;font-size:12px}
+.cart-btn{margin-left:auto;border:0;background:var(--blue-dark);color:#fff;border-radius:999px;padding:11px 16px;font-weight:800;white-space:nowrap;box-shadow:0 7px 18px rgba(14,42,90,.13)}
+.cart-btn .cart-count{display:inline-flex;min-width:21px;height:21px;align-items:center;justify-content:center;background:#fff;color:var(--blue-dark);border-radius:50%;font-size:11px;margin:0 5px}
+.hero{max-width:1180px;margin:auto;padding:66px 22px 38px;text-align:center}
+.hero h1{font-size:clamp(34px,5vw,56px);line-height:.98;letter-spacing:-.055em;margin:0 auto 17px;color:var(--blue-dark);max-width:850px}
+.hero p{font-size:17px;color:var(--muted);max-width:650px;line-height:1.6;margin:22px auto 0}
+.hero-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:26px}
+.primary,.secondary{border-radius:14px;padding:18px 28px;font-weight:800;font-size:17px;text-transform:uppercase;border:1px solid var(--blue);text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.primary{background:linear-gradient(135deg,#2b75c9,#17447f);color:#fff;box-shadow:0 10px 24px rgba(23,68,127,.35);animation:heroPulse 2.2s ease-in-out infinite}.primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(23,68,127,.5)}.secondary{background:#fff;color:var(--blue)}
+@keyframes heroPulse{0%,100%{box-shadow:0 10px 24px rgba(23,68,127,.3)}50%{box-shadow:0 10px 36px rgba(23,68,127,.6)}}
+.section{max-width:1180px;margin:auto;padding:30px 22px 65px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:20px}
+.section h2{font-size:32px;letter-spacing:-.04em;margin:0}.section-head p{margin:6px 0 0;color:var(--muted)}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cat{border:1px solid var(--border);background:rgba(255,255,255,.95);border-radius:17px;padding:18px;min-height:92px;display:flex;flex-direction:column;justify-content:center;text-align:left;transition:.2s}
+.cat strong{font-size:16px;color:var(--blue-dark)}.cat span{font-size:12px;color:var(--muted);margin-top:5px}
+.cat:hover,.cat.active{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.06);border-color:rgba(43,117,201,.35)}
+.cat.active{background:#eef6ff}
+.category-tools{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.filter-btn{border:1px solid var(--border);background:#fff;color:var(--blue-dark);border-radius:999px;padding:9px 13px;font-weight:800}
+.filter-btn.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.featured-wrap{margin-top:10px}
+.catalog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.product-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:15px;display:flex;flex-direction:column;min-height:225px;box-shadow:0 8px 22px rgba(14,42,90,.035)}
+.product-card small{color:var(--muted);font-size:12px}.product-card h3{font-size:15px;line-height:1.3;margin:7px 0 10px}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto}
+.price-box{background:#f7faff;border-radius:10px;padding:8px}.price-box span{display:block;font-size:10px;color:var(--muted);text-transform:uppercase;font-weight:800;letter-spacing:.04em}.price-box strong{display:block;font-size:16px;color:var(--blue-dark);margin-top:2px}
+.price-box.selected{outline:2px solid rgba(43,117,201,.18);background:#eef6ff}
+.card-mode-note{font-size:11px;color:var(--blue-dark);font-weight:800;margin-top:6px}
+.add{width:100%;border:0;background:var(--blue-light);color:var(--blue-dark);padding:11px;border-radius:10px;font-weight:800;margin-top:12px}
+.catalog-toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:0 0 16px}
+.search-wrap{position:relative;flex:1;min-width:220px}.search-wrap .search{width:100%;padding:13px 15px 13px 43px;border:1px solid var(--border);background:#fff;border-radius:14px;color:var(--text)}
+.search-icon{position:absolute;left:14px;top:9px;font-size:23px;color:var(--blue-dark);pointer-events:none}
+.count{font-size:13px;color:var(--muted);font-weight:700}.catalog-note{font-size:13px;color:var(--muted);margin:0 0 18px}
+.no-results{grid-column:1/-1;background:#fff;border:1px solid var(--border);border-radius:18px;padding:30px;text-align:center;color:var(--muted)}
+.catalog-hidden{display:none}#categorias{display:none}#categorias.show{display:block}
+.mode-card{background:linear-gradient(135deg,#f4f9ff,#fffaf1);border:1px solid var(--border);border-radius:24px;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.mode-card h2{margin:0 0 7px;font-size:27px}.mode-card p{margin:0;color:var(--muted);line-height:1.5;max-width:700px}
+.mode-buttons{display:flex;gap:8px;flex-shrink:0}.mode-btn,.mode-mini-btn{border:1px solid var(--border);background:#fff;color:var(--blue-dark);border-radius:11px;padding:11px 15px;font-weight:800}.mode-btn.active,.mode-mini-btn.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.cart-panel{position:fixed;right:18px;bottom:18px;width:min(390px,calc(100vw - 36px));background:#fff;border:1px solid var(--border);border-radius:22px;box-shadow:0 20px 60px rgba(14,42,90,.2);padding:18px;z-index:150;display:none}
+.cart-panel.open{display:block}.cart-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.cart-head h3{margin:0;font-size:15px}.cart-head h3 span{display:inline-flex;min-width:24px;height:24px;align-items:center;justify-content:center;background:var(--blue);color:#fff;border-radius:50%;font-size:11px;margin-left:4px}.head-btns{display:flex;gap:6px}.mini-cart{border:0;background:#eef5fb;color:var(--blue-dark);width:34px;height:34px;border-radius:50%;font-size:15px;font-weight:800}.cart-panel.mini{width:auto;padding:6px;border-radius:999px;overflow:hidden;cursor:pointer}.cart-panel.mini .cart-head{padding:2px 4px}.cart-panel.mini .mini-cart,.cart-panel.mini .mode-mini,.cart-panel.mini .cart-items,.cart-panel.mini #wholesaleStatus,.cart-panel.mini .cart-total,.cart-panel.mini .cart-actions{display:none}
+.cart-items{max-height:320px;overflow:auto;margin:12px 0;overscroll-behavior:contain}.cart-items::-webkit-scrollbar{width:8px}.cart-items::-webkit-scrollbar-thumb{background:#d7e2ee;border-radius:4px}.cart-item{display:grid;grid-template-columns:1fr auto;gap:8px;padding:10px 0;border-bottom:1px solid #edf1f5}.cart-item-name{font-size:13px;font-weight:800}.cart-item-sub{font-size:11px;color:var(--muted)}
+.qty{display:flex;align-items:center;gap:6px}.qty button{border:1px solid var(--border);background:#fff;border-radius:7px;width:26px;height:26px}.cart-total{display:flex;justify-content:space-between;font-weight:900;font-size:18px;padding-top:8px}.cart-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.cart-actions button{border-radius:11px;padding:11px;font-weight:800}.clear-cart{border:1px solid var(--border);background:#fff;color:var(--blue-dark)}.wa-btn{border:0;background:#25D366;color:#fff}.empty-cart{color:var(--muted);font-size:13px;padding:14px 0}
+.wholesale-msg{padding:10px 12px;border-radius:10px;background:#f5f8fc;color:var(--text);font-size:12px;margin:8px 0}.wholesale-msg.warning{background:#fff6e5;color:#805c12}.wholesale-msg.success{background:#edf9f1;color:#1d6b3d}.switch-retail{width:100%;border:0;background:transparent;color:var(--blue-dark);font-size:12px;font-weight:800;text-align:left;padding:5px 0}
+.cart-actions button:disabled{opacity:.45;cursor:not-allowed}
+.info{background:linear-gradient(135deg,#0e2a5a,#17447f);color:#fff;border-radius:25px;padding:30px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.info h2{font-size:31px;letter-spacing:-.04em;margin:0 0 10px}.info p{color:#d7e8e1;line-height:1.55}.wa-link{display:inline-flex;align-items:center;margin-top:14px;border-radius:12px;padding:12px 16px;background:#25D366;color:#fff;text-decoration:none;font-weight:800}
+.location-card{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:15px}.location-card strong{display:block;margin-bottom:5px}.location-card span{color:#d7e8e1;font-size:13px}
+.map-frame{width:100%;height:170px;border:0;border-radius:12px;margin-top:12px}.map-btn{display:inline-block;margin-top:10px;color:#fff;text-decoration:underline;font-weight:800;font-size:13px}
+.checkout-modal,.success-modal{position:fixed;inset:0;background:rgba(7,25,55,.45);backdrop-filter:blur(4px);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+.checkout-modal.open,.success-modal.open{display:flex}.checkout-box{width:min(560px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:24px;padding:28px;position:relative;box-shadow:0 25px 80px rgba(0,0,0,.22)}
+.modal-close{position:absolute;right:16px;top:16px;border:0;background:#eef5fb;color:var(--blue-dark);width:34px;height:34px;border-radius:50%;font-size:22px}
+.checkout-box h2{margin:0 0 8px}.checkout-box>p{color:var(--muted);margin-top:0}.checkout-summary{background:#f7faff;border:1px solid var(--border);border-radius:14px;padding:14px;font-size:13px;line-height:1.6;margin:15px 0;max-height:190px;overflow-y:auto;overscroll-behavior:contain}.summary-total{display:block;margin-top:8px;font-size:16px;color:var(--blue-dark)}
+.checkout-box label{display:block;font-size:13px;font-weight:800;margin:12px 0}.checkout-box input[type="text"]{display:block;width:100%;margin-top:6px;border:1px solid var(--border);border-radius:11px;padding:12px}
+.delivery-choice{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;margin:16px 0}.delivery-choice strong{width:100%}.delivery-choice label{margin:0;font-weight:600}.address-field{display:none}.address-field.show{display:block}.checkout-error{color:#b42318;font-size:12px;min-height:16px}.full{width:100%;margin-top:10px}
+.top-link{text-align:center;padding:8px 0 28px}.top-link a{color:var(--blue-dark);font-weight:800;text-decoration:none}
+footer{padding:28px 22px;background:#0a2146;color:#dbe8f7;text-align:center;font-size:13px}
+@media(max-width:950px){.catalog-grid{grid-template-columns:repeat(3,1fr)}.categories{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){body{padding-top:180px}.nav{height:180px;padding:0 12px}.logo img{width:170px;height:170px}.navlinks{display:none}.cart-btn{font-size:12px;padding:9px 11px}.hero{padding-top:48px}.mode-card,.info{grid-template-columns:1fr;display:grid}.mode-buttons{width:100%}.mode-btn{flex:1}.catalog-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){body{padding-top:180px}.logo{left:47%;}.logo img{width:140px;height:140px}.cart-btn{max-width:135px;overflow:hidden;text-overflow:ellipsis;padding:9px 10px;font-size:11px}.categories,.catalog-grid{grid-template-columns:1fr}.section{padding-left:18px;padding-right:18px}.hero{padding-left:18px;padding-right:18px}.prices{grid-template-columns:1fr 1fr}.cart-panel{right:10px;bottom:10px;width:calc(100vw - 20px)}}
+</style>
+
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <div class="navlinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#categorias" onclick="openCategories(event)">Categorías</a>
+      <a href="#productos">Productos</a>
+    </div>
+    <a class="logo" href="#inicio" aria-label="Navegar arriba o abajo" onclick="toggleLogoNavigation(event)"><img src="logo-original.jpg" alt="Química Jerusalén"></a>
+        <button class="cart-btn" onclick="toggleCart(true)">Mi carrito <span class="cart-count" id="headerCartCount">0</span><span id="headerCartTotal">$ 0</span></button>
+  </nav>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <h1>Encontrá lo que necesitás para tu hogar o negocio</h1>
+  <div class="hero-actions">
+    <a class="primary" href="#categorias" onclick="openCategories(event)">Explorar categorías</a>
+    <a class="secondary" href="#productos" onclick="showAllProducts(event)">Ver todos los productos</a>
+  </div>
+  <p>Todo lo que buscás, en un solo lugar.<br>Recorré el catálogo, elegí tus productos y armá tu pedido.</p>
+</section>
+
+<section class="section mode-section" id="modalidad">
+  <div class="mode-card">
+    <div><h2>¿Cómo querés comprar?</h2><p>Elegí minorista o mayorista. Los precios cambian automáticamente según la modalidad.</p></div>
+    <div class="mode-buttons">
+      <button id="modeMinor" class="mode-btn active" onclick="setMode('minor')">Minorista</button>
+      <button id="modeMay" class="mode-btn" onclick="setMode('may')">Mayorista</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="categorias">
+  <div class="section-head"><div><h2>Categorías</h2><p>Tocá una categoría para mostrar sus productos. Volvé a tocarla para cerrarla.</p></div></div>
+  <div class="categories" id="categoryGrid"></div>
+  <div class="category-tools">
+    <button class="filter-btn" id="showAllBtn" onclick="showAllProducts()">Ver todos</button>
+  </div>
+</section>
+
+<section class="section" id="destacados">
+  <div class="section-head"><div><h2>Productos destacados</h2><p>Elegí cualquiera de estos productos y agregalo directamente al carrito.</p></div></div>
+  <div class="catalog-grid" id="featuredGrid"></div>
+</section>
+
+<section class="section catalog-section" id="productos">
+  <div class="section-head"><div><h2 id="catalogTitle">Buscador</h2><p>Buscá un producto o elegí una categoría para ver sus productos.</p></div><span class="count" id="count"></span></div>
+  <div class="catalog-toolbar">
+    <div class="search-wrap"><span class="search-icon">⌕</span><input id="search" class="search" type="search" placeholder="Buscar un producto..." aria-label="Buscar un producto"></div>
+  </div>
+  <p class="catalog-note" id="catalogNote">Los precios se actualizan según la modalidad seleccionada. En las categorías de líquidos el precio es por litro.</p>
+  <div class="catalog-grid" id="catalog"></div>
+</section>
+
+<section class="section" id="pedido">
+  <div class="info">
+    <div>
+      <div class="eyebrow" style="color:#8fc2f0">Estamos para ayudarte</div>
+      <h2>¿Tenés alguna consulta?</h2>
+      <p>¿No encontrás lo que buscás o querés consultar por algún producto? Escribinos directamente por WhatsApp.</p>
+      <a class="wa-link" href="https://wa.me/5491134430701?text=Hola%20Qu%C3%ADmica%20Jerusal%C3%A9n%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener">Hablar por WhatsApp</a>
+    </div>
+    <div class="location-card">
+      <strong>Ubicación</strong>
+      <span>Calle 852 N.º 2669 entre 898 y 899 · San Francisco Solano</span>
+      <iframe class="map-frame" loading="lazy" src="https://www.google.com/maps?q=Calle+852+2669%2C+San+Francisco+Solano%2C+Buenos+Aires&output=embed" title="Mapa de Química Jerusalén"></iframe>
+      <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Calle+852+2669%2C+San+Francisco+Solano%2C+Buenos+Aires" target="_blank" rel="noopener">Abrir en Google Maps</a>
+    </div>
+  </div>
+</section>
+<div class="top-link"><a href="#inicio">Volver arriba</a></div>
+</main>
+
+<div class="cart-panel" id="cartPanel">
+  <div class="cart-head"><h3>Mi carrito <span id="cartCountBadge">0</span></h3><div class="head-btns"><button class="mini-cart" onclick="toggleCartMini()" aria-label="Minimizar carrito">▾</button></div></div>
+  <div class="mode-mini">
+    <button id="miniMinor" class="mode-mini-btn active" onclick="setMode('minor')">Minorista</button>
+    <button id="miniMay" class="mode-mini-btn" onclick="setMode('may')">Mayorista</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div id="wholesaleStatus"></div>
+  <div class="cart-total"><span>Total</span><span id="cartTotal">$ 0</span></div>
+  <div class="cart-actions">
+    <button class="clear-cart" onclick="clearCart()">Vaciar</button>
+    <button class="wa-btn" id="checkoutBtn" onclick="openCheckout()">Enviar pedido</button>
+  </div>
+</div>
+
+<div class="checkout-modal" id="checkoutModal">
+  <div class="checkout-box">
+    <button class="modal-close" onclick="closeCheckout()">×</button>
+    <div class="eyebrow">Último paso</div>
+    <h2>Completá tus datos</h2>
+    <p>Solo necesitamos tu nombre y apellido. Si elegís envío, también tu dirección.</p>
+    <div class="checkout-summary" id="checkoutSummary"></div>
+    <label>Nombre y apellido<input id="clientName" type="text" autocomplete="name" placeholder="Tu nombre y apellido"></label>
+    <div class="delivery-choice"><strong>¿Cómo querés recibirlo?</strong>
+      <label><input type="radio" name="delivery" value="Envío"> Envío</label>
+      <label><input type="radio" name="delivery" value="Retiro en el local"> Retiro en el local</label>
+    </div>
+    <label class="address-field" id="addressField">Dirección de envío<input id="clientAddress" type="text" autocomplete="street-address" placeholder="Calle, número, localidad"></label>
+    <div class="checkout-error" id="checkoutError"></div>
+    <button class="wa-btn full" onclick="sendOrder()">Enviar pedido por WhatsApp</button>
+  </div>
+</div>
+
+<footer>Química Jerusalén · Precios mayorista y minorista · San Francisco Solano</footer>
+
+<script>
+/* ==============================
+   CATÁLOGO EDITABLE
+   Para modificar productos: cambiá cat, name, minor o may.
+   ============================== */
+const products = [
+  { "cat": "Jabones", "name": "Jabón líquido tipo Ariel", "minor": "650", "may": "520" },
+  { "cat": "Jabones", "name": "Jabón líquido tipo Skip", "minor": "650", "may": "520" },
+  { "cat": "Jabones", "name": "Jabón tipo Querubin", "minor": "399", "may": "330" },
+  { "cat": "Jabones", "name": "Jabón líquido verde premium", "minor": "1190", "may": "1000" },
+  { "cat": "Jabones", "name": "Jabón líquido azul premium", "minor": "1190", "may": "1000" },
+  { "cat": "Jabones", "name": "Jabón líquido azul oxi", "minor": "1560", "may": "1320" },
+  { "cat": "Jabones", "name": "Jabón líquido blanco lavadero", "minor": "1600", "may": "1370" },
+  { "cat": "Jabones", "name": "Jabón líquido oxi", "minor": "1750", "may": "1470" },
+  { "cat": "Jabones", "name": "Jabón líquido power", "minor": "2450", "may": "2080" },
+  { "cat": "Suavizantes", "name": "Suavizante tipo Comfort", "minor": "1050", "may": "870" },
+  { "cat": "Suavizantes", "name": "Suavizante tipo Vivere", "minor": "1050", "may": "870" },
+  { "cat": "Suavizantes", "name": "Suavizante doble amarillo", "minor": "1450", "may": "1240" },
+  { "cat": "Suavizantes", "name": "Suavizante doble rosa", "minor": "1560", "may": "1330" },
+  { "cat": "Suavizantes", "name": "Suavizante doble celeste", "minor": "1750", "may": "1500" },
+  { "cat": "Suavizantes", "name": "Suavizante triple downy blanco", "minor": "2030", "may": "1730" },
+  { "cat": "Suavizantes", "name": "Suavizante triple oxi", "minor": "2180", "may": "1850" },
+  { "cat": "Suavizantes", "name": "Suavizante power", "minor": "2500", "may": "2100" },
+  { "cat": "Detergentes", "name": "Detergente amoniacal", "minor": "750", "may": "600" },
+  { "cat": "Detergentes", "name": "Detergente verde", "minor": "1450", "may": "1200" },
+  { "cat": "Detergentes", "name": "Detergente amarillo limón", "minor": "1780", "may": "1500" },
+  { "cat": "Detergentes", "name": "Detergente rojo", "minor": "1700", "may": "1440" },
+  { "cat": "Detergentes", "name": "Detergente ultra limón", "minor": "2900", "may": "2450" },
+  { "cat": "Detergentes", "name": "Detergente concentrado al 30%", "minor": "4700", "may": "4100" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Desengrasante amoniacal", "minor": "2450", "may": "2100" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Desengrasante concentrado premium", "minor": "25400", "may": "21500" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Desengrasante/Quitamanchas", "minor": "2600", "may": "2200" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Cera natural", "minor": "4600", "may": "3900" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Lavandina ropa color", "minor": "4400", "may": "3700" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Lavandina ropa blanca", "minor": "1200", "may": "999" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Oxipower", "minor": "6300", "may": "5300" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Lavandina", "minor": "300", "may": "260" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Destapa cañería", "minor": "600", "may": "500" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Limpia vidrios", "minor": "1900", "may": "1600" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Echo listo", "minor": "3000", "may": "2600" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Limpiador cremoso", "minor": "2900", "may": "2500" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Amonio cuaternario", "minor": "3400", "may": "1999" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Gel con lavandina", "minor": "3800", "may": "3200" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Removedor de cera", "minor": "3800", "may": "3200" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Limpiador multisuperficies", "minor": "3000", "may": "2600" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Limpia baños", "minor": "4500", "may": "3800" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Diluyente", "minor": "5000", "may": "4300" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Lustra muebles", "minor": "9000", "may": "7600" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Fluido acaroina", "minor": "9500", "may": "8000" },
+  { "cat": "Desengrasantes, ceras y otro", "name": "Flit líquido", "minor": "10200", "may": "8600" },
+  { "cat": "Esencias", "name": "Esencia eco fantasía", "minor": "8900", "may": "7500" },
+  { "cat": "Esencias", "name": "Esencia eco cherry", "minor": "9900", "may": "8400" },
+  { "cat": "Esencias", "name": "Esencia eco limón", "minor": "13300", "may": "11300" },
+  { "cat": "Esencias", "name": "Esencia eco citronella", "minor": "13300", "may": "11300" },
+  { "cat": "Esencias", "name": "Esencia eco floral", "minor": "20000", "may": "17000" },
+  { "cat": "Esencias", "name": "Esencia eco lavanda", "minor": "16800", "may": "14200" },
+  { "cat": "Esencias", "name": "Esencia eco lysoform", "minor": "16800", "may": "14300" },
+  { "cat": "Esencias", "name": "Esencia eco marina", "minor": "16800", "may": "14300" },
+  { "cat": "Esencias", "name": "Esencia fantasía", "minor": "8900", "may": "7500" },
+  { "cat": "Esencias", "name": "Esencia pino luz", "minor": "10300", "may": "8700" },
+  { "cat": "Esencias", "name": "Esencia cherry", "minor": "12300", "may": "8700" },
+  { "cat": "Esencias", "name": "Esencia limón", "minor": "16100", "may": "13700" },
+  { "cat": "Esencias", "name": "Esencia lysoform", "minor": "19900", "may": "16900" },
+  { "cat": "Esencias", "name": "Esencia marina", "minor": "20000", "may": "16900" },
+  { "cat": "Esencias", "name": "Esencia arpeage", "minor": "20100", "may": "17000" },
+  { "cat": "Esencias", "name": "Esencia baby johnson piso", "minor": "20100", "may": "17000" },
+  { "cat": "Esencias", "name": "Esencia procenex", "minor": "21800", "may": "18500" },
+  { "cat": "Esencias", "name": "Esencia lavanda", "minor": "16600", "may": "14050" },
+  { "cat": "Esencias", "name": "Esencia floral", "minor": "23500", "may": "19900" },
+  { "cat": "Esencias", "name": "Esencia citronella", "minor": "35000", "may": "29300" },
+  { "cat": "Desodorante de piso preparado", "name": "Eco fantasía", "minor": "300", "may": "250" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus fantasía", "minor": "300", "may": "250" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus pinoluz", "minor": "350", "may": "300" },
+  { "cat": "Desodorante de piso preparado", "name": "Eco limón", "minor": "450", "may": "380" },
+  { "cat": "Desodorante de piso preparado", "name": "Eco cherry", "minor": "350", "may": "300" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus cherry", "minor": "400", "may": "350" },
+  { "cat": "Desodorante de piso preparado", "name": "Eco lysoform", "minor": "410", "may": "350" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus limón", "minor": "400", "may": "350" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus lysoform", "minor": "540", "may": "460" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus marina", "minor": "670", "may": "570" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus arpeage", "minor": "670", "may": "570" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus baby jhonson", "minor": "670", "may": "570" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus procenex", "minor": "720", "may": "610" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus lavanda", "minor": "550", "may": "470" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus floral", "minor": "790", "may": "670" },
+  { "cat": "Desodorante de piso preparado", "name": "Plus citronella", "minor": "1150", "may": "970" },
+  { "cat": "Perfuminas", "name": "Cherry", "minor": "4900", "may": "4100" },
+  { "cat": "Perfuminas", "name": "Vainicoco", "minor": "5700", "may": "4800" },
+  { "cat": "Perfuminas", "name": "Comfort", "minor": "5600", "may": "4800" },
+  { "cat": "Perfuminas", "name": "Coco", "minor": "5900", "may": "4800" },
+  { "cat": "Perfuminas", "name": "Baby Johnson", "minor": "6100", "may": "5200" },
+  { "cat": "Perfuminas", "name": "Vainilla", "minor": "7100", "may": "6000" },
+  { "cat": "Perfuminas", "name": "Vivex", "minor": "6400", "may": "5400" },
+  { "cat": "Perfuminas", "name": "Coniglio", "minor": "6900", "may": "5900" },
+  { "cat": "Perfuminas", "name": "Coco limón", "minor": "7300", "may": "6200" },
+  { "cat": "Perfuminas", "name": "Vivere", "minor": "7500", "may": "6400" },
+  { "cat": "Perfuminas", "name": "Dove", "minor": "7500", "may": "6400" },
+  { "cat": "Jabón Manos", "name": "Eco cítrico", "minor": "500", "may": "500" },
+  { "cat": "Jabón Manos", "name": "Eco antiséptico", "minor": "1900", "may": "1600" },
+  { "cat": "Jabón Manos", "name": "Rosas", "minor": "6400", "may": "5400" },
+  { "cat": "Jabón Manos", "name": "Frutos rojos", "minor": "5500", "may": "4700" },
+  { "cat": "Jabón Manos", "name": "Antiséptico", "minor": "5800", "may": "4950" },
+  { "cat": "Jabón Manos", "name": "Jabón Dove", "minor": "5000", "may": "4200" },
+  { "cat": "Jabón Manos", "name": "Sanitizante Verde", "minor": "3379", "may": "2872" },
+  { "cat": "Automotor", "name": "Agua destilada", "minor": "1400", "may": "1180" },
+  { "cat": "Automotor", "name": "Brillo siliconado", "minor": "4700", "may": "3999" },
+  { "cat": "Automotor", "name": "Shampoo auto siliconado", "minor": "5400", "may": "4600" },
+  { "cat": "Automotor", "name": "Revividor de cubiertas", "minor": "8900", "may": "7600" },
+  { "cat": "Automotor", "name": "Limpia motor", "minor": "4200", "may": "3600" },
+  { "cat": "Automotor", "name": "Silicona para interiores", "minor": "7900", "may": "6700" },
+  { "cat": "Automotor", "name": "Revividor premium", "minor": "14600", "may": "12400" },
+  { "cat": "Insumo Piletas", "name": "Hipoclorito de sodio", "minor": "970", "may": "850" },
+  { "cat": "Insumo Piletas", "name": "Regulador de pH", "minor": "1200", "may": "1000" },
+  { "cat": "Insumo Piletas", "name": "Clarificador", "minor": "4400", "may": "3800" },
+  { "cat": "Insumo Piletas", "name": "Alguicida", "minor": "5500", "may": "4700" },
+  { "cat": "Envases", "name": "Botella 250 cc con tapa", "minor": "550", "may": "450" },
+  { "cat": "Envases", "name": "Botella 1 lt con tapa", "minor": "650", "may": "520" },
+  { "cat": "Envases", "name": "Bidón 5 lt con tapa", "minor": "1800", "may": "1500" },
+  { "cat": "Envases", "name": "Bidón 10 lt con tapa", "minor": "3400", "may": "2800" },
+  { "cat": "Envases", "name": "Bidón 20 lt con tapa", "minor": "15000", "may": "12000" },
+  { "cat": "Papeles", "name": "Servilleta Elegante paquete 80 uni", "minor": "1729", "may": "1566" },
+  { "cat": "Papeles", "name": "Elegante pañuelos Pocket 6x12", "minor": "2088", "may": "1889" },
+  { "cat": "Papeles", "name": "Elegante papel higiénico 4x30", "minor": "1811", "may": "1640" },
+  { "cat": "Papeles", "name": "Elegante papel higiénico 4x80", "minor": "4442", "may": "4008" },
+  { "cat": "Papeles", "name": "Desnudo PH 12x50", "minor": "7114", "may": "6413" },
+  { "cat": "Papeles", "name": "Papel higiénico HS x30 Cod 01 New Pel", "minor": "13047", "may": "11752" },
+  { "cat": "Papeles", "name": "M&G papel higiénico extra blanco 12x100", "minor": "14867", "may": "13390" },
+  { "cat": "Papeles", "name": "M&G papel higiénico extra blanco 24x50", "minor": "17835", "may": "16062" },
+  { "cat": "Papeles", "name": "Newpel x30 - rojo", "minor": "22938", "may": "20654" },
+  { "cat": "Papeles", "name": "Elegante doble hoja papel hig. 4x30", "minor": "3092", "may": "2793" },
+  { "cat": "Papeles", "name": "Newpel doble hoja valija 12x30mts", "minor": "10087", "may": "9088" },
+  { "cat": "Papeles", "name": "Papel higiénico triple hoja x12 uni New Pel", "minor": "13341", "may": "12017" },
+  { "cat": "Papeles", "name": "Dicha rollo cocina 3x40 p.", "minor": "1999", "may": "1809" },
+  { "cat": "Papeles", "name": "Elegante rollo cocina premium x200 paños", "minor": "2484", "may": "2246" },
+  { "cat": "Papeles", "name": "Rollo de cocina 360 unidad", "minor": "4683", "may": "4225" },
+  { "cat": "Papeles", "name": "Rollo cocina súper mega bulto x8", "minor": "18601", "may": "16751" },
+  { "cat": "Papeles", "name": "Rollo de cocina 4x360 bulto New Pel", "minor": "18434", "may": "16601" },
+  { "cat": "Papeles", "name": "Toallas intercaladas blanca New Pel", "minor": "13417", "may": "12085" },
+  { "cat": "Papeles", "name": "Eco papel higiénico 8x300 cono chico", "minor": "9587", "may": "8638" },
+  { "cat": "Papeles", "name": "Eco papel higiénico 8x300 cono grande", "minor": "10363", "may": "9337" },
+  { "cat": "Papeles", "name": "Bobina limpieza 1000 paños New Pel", "minor": "30722", "may": "27660" },
+  { "cat": "Papeles", "name": "M&G toallas rollo 4x200 ext. blancas", "minor": "28521", "may": "25679" },
+  { "cat": "Papeles", "name": "M&G toallas rollo 2x300 ext. blancas", "minor": "23020", "may": "20728" },
+  { "cat": "Papeles", "name": "M&G bobina inst. 25 cm doble hoja 2x400", "minor": "44212", "may": "39801" },
+  { "cat": "Papeles", "name": "Elegante bobina premium doble hoja 24 cm", "minor": "43168", "may": "38861" },
+  { "cat": "Papeles", "name": "Elegante bobina premium doble hoja 19 cm", "minor": "34594", "may": "31145" },
+  { "cat": "Bolsas", "name": "Maxi-Bag bolsa residuos 45x60 paq x10", "minor": "1146", "may": "1041" },
+  { "cat": "Bolsas", "name": "Maxi-Bag bolsa residuos 50x70 paq x10", "minor": "1422", "may": "1290" },
+  { "cat": "Bolsas", "name": "Sampedrina bolsa cons. 60x90 paq x10", "minor": "1713", "may": "1552" },
+  { "cat": "Bolsas", "name": "Maxi-Bag bolsa cons. 60x90 ref paq x10", "minor": "2376", "may": "2148" },
+  { "cat": "Bolsas", "name": "Maxi Bag bolsa verde 60x90 x10 unidades", "minor": "2970", "may": "2683" },
+  { "cat": "Bolsas", "name": "Sampedrina bolsa cons. 80x110 paq x10", "minor": "3110", "may": "2809" },
+  { "cat": "Bolsas", "name": "Maxi-Bag bolsa cons. 90x120 paq x10", "minor": "4877", "may": "4399" },
+  { "cat": "Bolsas", "name": "Maxi-Bag rollito bolsa res. 45x60 paq. 20 ud", "minor": "1428", "may": "1295" },
+  { "cat": "Bolsas", "name": "Maxi-Bag rollito bolsa cons. 60x90 paq. 10 ud", "minor": "1690", "may": "1531" },
+  { "cat": "Bolsas", "name": "Maxi-Bag rollito bolsa res. 50x70 paq. 20 ud", "minor": "1877", "may": "1699" },
+  { "cat": "Bolsas", "name": "Maxi-Bag rollito bolsa cons. 80x110 paq. 10 ud", "minor": "2904", "may": "2624" },
+  { "cat": "Bolsas", "name": "Bolsa camiseta 40x50 blancas", "minor": "3038", "may": "2744" },
+  { "cat": "Bolsas", "name": "Bolsa camiseta 45x60", "minor": "3487", "may": "3148" },
+  { "cat": "Textil", "name": "Duramas trapo piso gris costurado", "minor": "1170", "may": "1063" },
+  { "cat": "Textil", "name": "Duramas trapo piso consorcio grande", "minor": "1510", "may": "1369" },
+  { "cat": "Textil", "name": "Duramas trapo piso plano rayado", "minor": "1952", "may": "1767" },
+  { "cat": "Textil", "name": "Duramas trapo piso nido abeja blanco", "minor": "1952", "may": "1767" },
+  { "cat": "Textil", "name": "Duramas mopa blanca Max 190g", "minor": "3416", "may": "3084" },
+  { "cat": "Textil", "name": "Entresol rejilla pabilo liviana común", "minor": "405", "may": "375" },
+  { "cat": "Textil", "name": "Entresol rejilla pabilo súper 40x42", "minor": "507", "may": "466" },
+  { "cat": "Textil", "name": "Entresol rejilla pabilo doble", "minor": "710", "may": "649" },
+  { "cat": "Textil", "name": "Duramas rejilla americana pesada 35x42", "minor": "692", "may": "633" },
+  { "cat": "Textil", "name": "Entresol rejilla de auto", "minor": "2235", "may": "2022" },
+  { "cat": "Textil", "name": "Balerina paño multiuso 38x40", "minor": "661", "may": "605" },
+  { "cat": "Textil", "name": "Duramas franela naranja", "minor": "1510", "may": "1369" },
+  { "cat": "Textil", "name": "Repasador guarda francesa", "minor": "3135", "may": "2832" },
+  { "cat": "Cabos", "name": "Cabo de madera 1ra x 1,20 mt", "minor": "1374", "may": "1247" },
+  { "cat": "Cabos", "name": "Cabo de madera x 1,50 mt", "minor": "2530", "may": "2287" },
+  { "cat": "Cabos", "name": "Cabo de madera 2 mts", "minor": "3863", "may": "3487" },
+  { "cat": "Cabos", "name": "Cabo de madera industrial", "minor": "3599", "may": "3249" },
+  { "cat": "Cepillos", "name": "Cleanery cepillo planchita", "minor": "1650", "may": "1495" },
+  { "cat": "Cepillos", "name": "Cleanery cepillo lava auto", "minor": "3204", "may": "2894" },
+  { "cat": "Cepillos", "name": "Cepillo lava auto", "minor": "3204", "may": "2894" },
+  { "cat": "Cepillos", "name": "Cleanery cepillo lava camión", "minor": "5467", "may": "4930" },
+  { "cat": "Cepillos", "name": "Romyl cepillo W.C económico", "minor": "1465", "may": "1329" },
+  { "cat": "Cepillos", "name": "Romyl plumero limpia techo boca", "minor": "4350", "may": "3925" },
+  { "cat": "Cepillos", "name": "Escobilla con base modelo Lira colores", "minor": "7004", "may": "6314" },
+  { "cat": "Escobas", "name": "Cleanery escobillón plano 5 hileras", "minor": "2632", "may": "2379" },
+  { "cat": "Escobas", "name": "Cleanery escobillón plano 6 hileras", "minor": "2953", "may": "2668" },
+  { "cat": "Escobas", "name": "Cleanery escobita exterior", "minor": "3201", "may": "2891" },
+  { "cat": "Escobas", "name": "Cleanery escobillón súper plano 6 hileras", "minor": "3504", "may": "3164" },
+  { "cat": "Escobas", "name": "Cleanery escobillón laqueado interior", "minor": "4035", "may": "3642" },
+  { "cat": "Escobas", "name": "Cleanery escobillón anden 50 cm", "minor": "9140", "may": "8236" },
+  { "cat": "Escobas", "name": "Cleanery escobillón barrendero", "minor": "11241", "may": "10127" },
+  { "cat": "Escobas", "name": "Cleanery escobillón anden 100 cm", "minor": "14158", "may": "12752" },
+  { "cat": "Secadores", "name": "Secador de goma negro N°30", "minor": "1723", "may": "1561" },
+  { "cat": "Secadores", "name": "Secador de goma negro N°40", "minor": "2158", "may": "1952" },
+  { "cat": "Secadores", "name": "Secador de goma rojo N°30", "minor": "2302", "may": "2082" },
+  { "cat": "Secadores", "name": "Secador de goma rojo N°40", "minor": "3127", "may": "2824" },
+  { "cat": "Secadores", "name": "Secador doble goma reforzado premium", "minor": "4919", "may": "4437" },
+  { "cat": "Secadores", "name": "Secador de goma blanco N°50", "minor": "3298", "may": "2978" },
+  { "cat": "Secadores", "name": "Limpia vidrios grande Piragua", "minor": "4038", "may": "3644" },
+  { "cat": "Esponjas", "name": "Esponja chata con fibra Romyl", "minor": "608", "may": "552" },
+  { "cat": "Esponjas", "name": "Make esponja con fibra", "minor": "650", "may": "590" },
+  { "cat": "Esponjas", "name": "Make esponja con fibra c/salva uñas", "minor": "763", "may": "692" },
+  { "cat": "Esponjas", "name": "Romyl esponja fibra fácil superficie delicada", "minor": "1066", "may": "964" },
+  { "cat": "Esponjas", "name": "Make esponja de bronce x12 gr", "minor": "921", "may": "834" },
+  { "cat": "Esponjas", "name": "Romyl esponja de acero inox x13 grs", "minor": "568", "may": "516" },
+  { "cat": "Esponjas", "name": "Romyl esponja de bronce x13 grs", "minor": "973", "may": "881" },
+  { "cat": "Esponjas", "name": "Make esponja de acero x30 gr", "minor": "1356", "may": "1225" },
+  { "cat": "Esponjas", "name": "Make lana de acero", "minor": "1370", "may": "1238" },
+  { "cat": "Limpieza hogar", "name": "Hogar lavandina x1 Lt", "minor": "971", "may": "884" },
+  { "cat": "Limpieza hogar", "name": "Lavandina Heroe x1 Lts", "minor": "1043", "may": "949" },
+  { "cat": "Limpieza hogar", "name": "Ayudín lavandina clásica x1 Lt", "minor": "1589", "may": "1440" },
+  { "cat": "Limpieza hogar", "name": "Lavandina granulada Rinde 5 Lts", "minor": "1448", "may": "1313" },
+  { "cat": "Limpieza hogar", "name": "Pato Purific adhesivo", "minor": "3262", "may": "2946" },
+  { "cat": "Limpieza hogar", "name": "ALA detergente x750 ml", "minor": "2903", "may": "2623" },
+  { "cat": "Limpieza hogar", "name": "Cif limpiador cremoso x250 cc", "minor": "4471", "may": "4034" },
+  { "cat": "Limpieza hogar", "name": "Cif crema x750 ml", "minor": "4471", "may": "4034" },
+  { "cat": "Limpieza hogar", "name": "Lysoform aerosol 360 cc", "minor": "4096", "may": "3696" },
+  { "cat": "Limpieza hogar", "name": "Blem lustra muebles aerosol x360 cc", "minor": "5976", "may": "5388" },
+  { "cat": "Limpieza hogar", "name": "Bicarbonato x1 kg", "minor": "3669", "may": "3312" },
+  { "cat": "Limpieza hogar", "name": "Detergente promo", "minor": "600", "may": "600" },
+  { "cat": "Limpieza hogar", "name": "Cera negra", "minor": "3713", "may": "3154" },
+  { "cat": "Lavado de ropa", "name": "ALA jabón en polvo Matic x400 grs", "minor": "1968", "may": "1781" },
+  { "cat": "Lavado de ropa", "name": "ALA jabón en polvo regular x400 grs", "minor": "1968", "may": "1781" },
+  { "cat": "Lavado de ropa", "name": "Villa Iris jabón en pan x150 grs", "minor": "740", "may": "676" },
+  { "cat": "Lavado de ropa", "name": "Seiseme jabón en pan x300 grs", "minor": "1904", "may": "1724" },
+  { "cat": "Accesorios", "name": "Broches PVC", "minor": "1418", "may": "1286" },
+  { "cat": "Accesorios", "name": "Villa Iris velas 14x175 mm paquete x4", "minor": "863", "may": "787" },
+  { "cat": "Accesorios", "name": "Sopapa de goma negra", "minor": "1351", "may": "1226" },
+  { "cat": "Accesorios", "name": "Sopapa de goma roja", "minor": "1665", "may": "1509" },
+  { "cat": "Accesorios", "name": "Make guante", "minor": "3320", "may": "2998" },
+  { "cat": "Baños y aromatizantes", "name": "Canasta sólida pato 27,5 gr", "minor": "3900", "may": "3600" },
+  { "cat": "Baños y aromatizantes", "name": "Pato bloque mochila x2u", "minor": "7300", "may": "6600" },
+  { "cat": "Baños y aromatizantes", "name": "Destructor de sarro 500 ml", "minor": "8000", "may": "7200" },
+  { "cat": "Baños y aromatizantes", "name": "Sahumerio saphirus x20 u", "minor": "1600", "may": "1400" },
+  { "cat": "Baños y aromatizantes", "name": "Glade aerosol x360 cc", "minor": "4400", "may": "4000" },
+  { "cat": "Baños y aromatizantes", "name": "Saphirus aromatizador x250 cc", "minor": "4300", "may": "3900" },
+  { "cat": "Baños y aromatizantes", "name": "Saphirus difusor x125 ml", "minor": "6000", "may": "5400" },
+  { "cat": "Baños y aromatizantes", "name": "Saphirus aerosol", "minor": "6200", "may": "5600" },
+  { "cat": "Jardín", "name": "Barre hojas chico", "minor": "1362", "may": "1226" },
+  { "cat": "Jardín", "name": "Barre hojas profesional Make", "minor": "7945", "may": "7151" },
+  { "cat": "Jardín", "name": "Manguera 1/2 liviana 15 mts", "minor": "9262", "may": "8336" },
+  { "cat": "Jardín", "name": "Manguera 1/2 reforzada 15 mts", "minor": "11578", "may": "10420" },
+  { "cat": "Jardín", "name": "Manguera 3/4 liviana 15 mts", "minor": "18524", "may": "16672" },
+  { "cat": "Jardín", "name": "Manguera 3/4 reforzada x 15 mts", "minor": "23156", "may": "20840" },
+  { "cat": "Insecticidas", "name": "Raid espiral sobre x 4", "minor": "1085", "may": "977" },
+  { "cat": "Insecticidas", "name": "Raid espiral caja x12", "minor": "2930", "may": "2637" },
+  { "cat": "Insecticidas", "name": "Raid tabletas x 12", "minor": "4924", "may": "4432" },
+  { "cat": "Insecticidas", "name": "Raid tabletas x 24", "minor": "7729", "may": "6956" },
+  { "cat": "Insecticidas", "name": "Fuyi mata moscas y mosq. aero. x 360 cc", "minor": "5567", "may": "5010" },
+  { "cat": "Insecticidas", "name": "Raid mata moscas y mosq. aero. x 360 cc", "minor": "7147", "may": "6432" },
+  { "cat": "Insecticidas", "name": "Raid mata moscas y mosq. aero. sin olor", "minor": "11356", "may": "10220" },
+  { "cat": "Insecticidas", "name": "Veloxan derribante fly ras x 60 cc", "minor": "8784", "may": "7906" },
+  { "cat": "Insecticidas", "name": "Off crema x 60 cc", "minor": "2626", "may": "2363" },
+  { "cat": "Insecticidas", "name": "Off crema grande x 196 cc", "minor": "5882", "may": "5294" },
+  { "cat": "Insecticidas", "name": "Off aerosol x 165 cc", "minor": "8202", "may": "7382" },
+  { "cat": "Insecticidas", "name": "Repelente Off verde larga duración", "minor": "10572", "may": "9515" },
+  { "cat": "Insecticidas", "name": "Troya hormigas mirex micropellets x 100 grs", "minor": "3170", "may": "2853" },
+  { "cat": "Insecticidas", "name": "Hor-tal hormig líquido x 60 cc", "minor": "4820", "may": "4338" },
+  { "cat": "Insecticidas", "name": "Glacoxan hormiguicida polvo x 250 grs", "minor": "6557", "may": "5901" },
+  { "cat": "Insecticidas", "name": "Hor-tal suspensión concentrada x 120 cc", "minor": "6874", "may": "6187" },
+  { "cat": "Insecticidas", "name": "K-othrina x 60 cc", "minor": "8345", "may": "7511" },
+  { "cat": "Insecticidas", "name": "Geltek jeringa hormigas x 40 gr", "minor": "14966", "may": "13469" },
+  { "cat": "Insecticidas", "name": "Geltek jeringa cucaracha x 12 grs", "minor": "6722", "may": "6050" },
+  { "cat": "Insecticidas", "name": "Raid insecticida extermina cucarachas", "minor": "7011", "may": "6310" },
+  { "cat": "Insecticidas", "name": "Glacoxan cucarachas fiprofeno x 60 cc", "minor": "9099", "may": "8189" },
+  { "cat": "Insecticidas", "name": "Ultraplus dispenser x 50 grs", "minor": "2303", "may": "2073" },
+  { "cat": "Insecticidas", "name": "Geltek quesito para ratas x 100 grs", "minor": "4952", "may": "4457" },
+  { "cat": "Insecticidas", "name": "Panic ratas x 100 grs", "minor": "10114", "may": "9103" },
+  { "cat": "Insecticidas", "name": "Ecthol garrapaticida x 70 ml", "minor": "7683", "may": "6915" },
+  { "cat": "Insecticidas", "name": "Keeptrin insecticida para diluir x 1 lt", "minor": "25094", "may": "22585" },
+  { "cat": "Perfumeria", "name": "Azufre", "minor": "1210", "may": "1089" },
+  { "cat": "Perfumeria", "name": "Rexona jabón tocador x 125 grs", "minor": "1536", "may": "1382" },
+  { "cat": "Perfumeria", "name": "Dove jabón de tocador original 90 grs", "minor": "2786", "may": "2507" },
+  { "cat": "Perfumeria", "name": "Rexona odorono deso. crema 60 grs", "minor": "2837", "may": "2553" },
+  { "cat": "Perfumeria", "name": "Pasta dental Colgate original", "minor": "2587", "may": "2328" },
+  { "cat": "Perfumeria", "name": "Rexona efficient talco x 100 grs", "minor": "3691", "may": "3322" },
+  { "cat": "Perfumeria", "name": "Dove desodorante aerosol 150 ml", "minor": "5344", "may": "4810" },
+  { "cat": "Perfumeria", "name": "Sedal doypack shampoo 300 cc", "minor": "3589", "may": "3230" },
+  { "cat": "Perfumeria", "name": "Sedal doypack acondicionador 300 cc", "minor": "3589", "may": "3230" },
+  { "cat": "Perfumeria", "name": "Protectores diarios Doncella x 20 uni", "minor": "1357", "may": "1221" },
+  { "cat": "Perfumeria", "name": "SHE prot. diarios ultrafina pocket x 20", "minor": "847", "may": "762" },
+  { "cat": "Perfumeria", "name": "SHE toallitas fem. c/alas pocket x 8", "minor": "1377", "may": "1239" },
+  { "cat": "Perfumeria", "name": "Lady soft toallitas normal (verde) x 8", "minor": "1334", "may": "1201" },
+  { "cat": "Perfumeria", "name": "Calipso toallitas con alas verde x 8", "minor": "1290", "may": "1161" },
+  { "cat": "Perfumeria", "name": "Calipso prot. diarios s/fragancia x 20", "minor": "1376", "may": "1238" },
+  { "cat": "Plasticos", "name": "Romyl balde plástico x 12 lt reforzado", "minor": "6170", "may": "5553" },
+  { "cat": "Plasticos", "name": "Ecoline balde 16 lts c/ escurridor colores", "minor": "15579", "may": "14021" },
+  { "cat": "Plasticos", "name": "Mopa spray slim c/depósito 300 ml", "minor": "23709", "may": "21338" },
+  { "cat": "Plasticos", "name": "Spin mopa rotativo 13 lts c/ cesto inox", "minor": "39121", "may": "35209" },
+  { "cat": "Plasticos", "name": "Palangana de 6 lts", "minor": "3433", "may": "3090" },
+  { "cat": "Plasticos", "name": "Palangana 9 lts colores", "minor": "3555", "may": "3200" },
+  { "cat": "Plasticos", "name": "Ecoline fuentón 14 lts colores", "minor": "4622", "may": "4160" },
+  { "cat": "Plasticos", "name": "Ecoline fuentón 20 lts colores", "minor": "6149", "may": "5534" },
+  { "cat": "Plasticos", "name": "Ecoline fuentón 30 lts colores", "minor": "9940", "may": "8946" },
+  { "cat": "Plasticos", "name": "Recip. resid. a pedal 16 lts l. premium colores", "minor": "21672", "may": "19505" },
+  { "cat": "Plasticos", "name": "Recip. resid. c/ tapa 40 lts l. premium colores", "minor": "31292", "may": "28163" },
+  { "cat": "Plasticos", "name": "Recip. resid. c/ tapa vaivén 40 lts l. premium colores", "minor": "35578", "may": "32020" },
+  { "cat": "Plasticos", "name": "Recip. resid. c/ tapa vaivén 50 lts l. premium colores", "minor": "39121", "may": "35209" },
+  { "cat": "Plasticos", "name": "Recip. resid. c/ tapa 60 lts l. premium colores", "minor": "67873", "may": "61086" },
+  { "cat": "Plasticos", "name": "Canasto ropa redondo calado l. premium colores", "minor": "15773", "may": "14196" },
+  { "cat": "Plasticos", "name": "Canasto ropa rect. calado 60 lts l. premium color", "minor": "25829", "may": "23246" },
+  { "cat": "Plasticos", "name": "Disp. jabón líquido blanco c/ tecla gris", "minor": "13898", "may": "12508" },
+  { "cat": "Plasticos", "name": "Disp. jabón líquido blanco c/ tecla azul", "minor": "13896", "may": "12506" },
+  { "cat": "Plasticos", "name": "Disp. toallas int. tapa fume", "minor": "14425", "may": "12983" },
+  { "cat": "Plasticos", "name": "Dispenser jumbo x 350 mts tapa blanca", "minor": "14771", "may": "13294" },
+  { "cat": "Plasticos", "name": "Dispensador automático analógico", "minor": "16279", "may": "14651" },
+  { "cat": "Plasticos", "name": "Dispenser jumbo x 350 mts tapa fume", "minor": "24093", "may": "21684" },
+  { "cat": "Plasticos", "name": "Dispenser doble higiénico hasta 110 mts", "minor": "62149", "may": "55934" },
+  { "cat": "Plasticos", "name": "Pala de mano", "minor": "2147", "may": "1932" },
+  { "cat": "Plasticos", "name": "Pala con cabo fijo", "minor": "4987", "may": "4488" },
+  { "cat": "Plasticos", "name": "Bomba jabonera 250 cc", "minor": "635", "may": "572" },
+  { "cat": "Plasticos", "name": "Envase con rociador x 1 lt", "minor": "1820", "may": "1638" },
+  { "cat": "Plasticos", "name": "Florida embudo grande", "minor": "6336", "may": "5702" }
+];
+
+let cart={};
+let mode='minor';
+let activeCategory=null;
+const WHOLESALE_MIN=100000;
+const featuredNames=["Jabón tipo Querubin","Suavizante tipo Comfort","Detergente amoniacal","Hipoclorito de sodio"];
+const fmt=n=>'$ '+Number(n||0).toLocaleString('es-AR');
+const num=s=>Number(String(s).replace(/\./g,'').replace(/,/g,''));
+const esc=s=>String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'&quot;');
+const LIQUID_CATS=new Set(["Jabones","Suavizantes","Detergentes","Desengrasantes, ceras y otro","Esencias","Desodorante de piso preparado","Perfuminas","Jabón Manos","Automotor","Insumo Piletas"]);
+const unitNote=p=>p.cat==='Esencias'?'Por litro · rinde 60 lt':(LIQUID_CATS.has(p.cat)?'Por litro':'');
+
+function priceOf(p){return mode==='may'?num(p.may):num(p.minor)}
+
+function toggleLogoNavigation(e){
+  e.preventDefault();
+  const nearTop=window.scrollY<140;
+  window.scrollTo({top:nearTop?document.documentElement.scrollHeight:0,behavior:'smooth'});
+}
+
+function setMode(next){
+  mode=next;
+  document.getElementById('modeMinor').classList.toggle('active',mode==='minor');
+  document.getElementById('modeMay').classList.toggle('active',mode==='may');
+document.getElementById('miniMinor').classList.toggle('active',mode==='minor');
+  document.getElementById('miniMay').classList.toggle('active',mode==='may');
+  updateCart();
+  renderFeatured();
+  const q=document.getElementById('search').value.trim();
+  if(activeCategory || q) renderCatalog(activeCategory);
+  else hideCatalog();
+}
+
+function addToCart(name){
+  cart[name]=(cart[name]||0)+1;
+  updateCart();
+  toggleCart(true);
+}
+
+function changeQty(name,delta){
+  cart[name]=(cart[name]||0)+delta;
+  if(cart[name]<=0) delete cart[name];
+  updateCart();
+}
+
+function clearCart(){cart={};updateCart();}
+
+function toggleCart(open){
+  const panel=document.getElementById('cartPanel');
+  panel.classList.toggle('open',open);
+  if(open){ panel.classList.remove('mini'); updateCart(); }
+}
+
+function toggleCartMini(){
+  document.getElementById('cartPanel').classList.toggle('mini');
+}
+
+function cartTotal(){
+  return Object.entries(cart).reduce((sum,[name,q])=>{
+    const p=products.find(x=>x.name===name);
+    return sum+(p?priceOf(p)*q:0);
+  },0);
+}
+
+function cartUnits(){return Object.values(cart).reduce((a,b)=>a+b,0)}
+
+function updateCart(){
+  const entries=Object.entries(cart), total=cartTotal(), units=cartUnits();
+  document.getElementById('cartCountBadge').textContent=units;
+  document.getElementById('headerCartCount').textContent=units;
+  document.getElementById('cartTotal').textContent=fmt(total);
+  document.getElementById('headerCartTotal').textContent=fmt(total);
+
+  const box=document.getElementById('cartItems');
+  if(!entries.length){
+    box.innerHTML='<div class="empty-cart"><strong>Tu carrito está vacío.</strong><br>Explorá los productos y agregá lo que necesitás.</div>';
+  }else{
+    box.innerHTML=entries.map(([name,q])=>{
+      const p=products.find(x=>x.name===name);
+      return `<div class="cart-item">
+        <div><div class="cart-item-name">${p.name}</div><div class="cart-item-sub">${fmt(priceOf(p))} c/u · ${q} unidad(es) · ${fmt(priceOf(p)*q)}</div></div>
+        <div class="qty"><button type="button" data-qty-product="${esc(name)}" data-qty-delta="-1">−</button><b>${q}</b><button type="button" data-qty-product="${esc(name)}" data-qty-delta="1">+</button></div>
+      </div>`;
+    }).join('');
+  }
+
+  const status=document.getElementById('wholesaleStatus'), checkout=document.getElementById('checkoutBtn');
+  if(mode==='may'){
+    const faltan=Math.max(0,WHOLESALE_MIN-total);
+    if(!entries.length){
+      status.innerHTML='<div class="wholesale-msg">El mínimo mayorista es de <strong>$ 100.000</strong>.</div>';
+      checkout.disabled=true;
+    }else if(total<WHOLESALE_MIN){
+      status.innerHTML=`<div class="wholesale-msg warning"><strong>Te faltan ${fmt(faltan)}</strong> para alcanzar el mínimo mayorista de $ 100.000.</div><button class="switch-retail" onclick="setMode('minor')">Si no querés completar el pedido, podés comprar como minorista</button>`;
+      checkout.disabled=true;
+    }else{
+      status.innerHTML='<div class="wholesale-msg success">Alcanzaste el mínimo mayorista de $ 100.000.</div>';
+      checkout.disabled=false;
+    }
+  }else{
+    status.innerHTML='';
+    checkout.disabled=!entries.length;
+  }
+}
+
+function productCard(p){
+  return `<article class="product-card">
+    <small>${p.cat}</small>
+    <h3>${p.name}</h3>
+    <div class="prices">
+      <div class="price-box ${mode==='minor'?'selected':''}"><span>Minorista</span><strong>${fmt(num(p.minor))}</strong></div>
+      <div class="price-box ${mode==='may'?'selected':''}"><span>Mayorista</span><strong>${fmt(num(p.may))}</strong></div>
+    </div>
+    <div class="card-mode-note">${unitNote(p)}${unitNote(p)?' · ':''}${mode==='may'?'Precio mayorista':'Precio minorista'}</div>
+    <button class="add" type="button" data-add-product="${esc(p.name)}">AGREGAR AL CARRITO</button>
+  </article>`;
+}
+
+function renderCatalog(cat=null){
+  const grid=document.getElementById('catalog');
+  const q=document.getElementById('search').value.toLowerCase().trim();
+  if(cat){
+    document.getElementById('catalogTitle').textContent=cat;
+  }else{
+    document.getElementById('catalogTitle').textContent='Buscador';
+  }
+  const list=products.filter(p=>(!cat||p.cat===cat)&&(!q||p.name.toLowerCase().includes(q)||p.cat.toLowerCase().includes(q)));
+  document.getElementById('count').textContent=list.length+' productos';
+  grid.innerHTML=list.length?list.map(productCard).join(''):'<div class="no-results">No encontramos productos con esa búsqueda.</div>';
+  grid.classList.remove('catalog-hidden');
+}
+
+function hideCatalog(){
+  document.getElementById('catalog').classList.add('catalog-hidden');
+  document.getElementById('count').textContent='';
+}
+
+function openCategories(ev){
+  if(ev){ev.preventDefault();}
+  activeCategory=null;
+  document.querySelectorAll('.cat-button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('showAllBtn').classList.remove('active');
+  hideCatalog();
+  const sec=document.getElementById('categorias');
+  sec.classList.add('show');
+  sec.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function showAllProducts(ev){
+  if(ev){ev.preventDefault();}
+  activeCategory=null;
+  document.querySelectorAll('.cat-button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('showAllBtn').classList.add('active');
+  renderCatalog(null);
+  document.getElementById('productos').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function chooseCategory(cat){
+  const button=[...document.querySelectorAll('.cat-button')].find(b=>b.dataset.category===cat);
+  if(activeCategory===cat){
+    activeCategory=null;
+    button?.classList.remove('active');
+    document.getElementById('showAllBtn').classList.remove('active');
+    hideCatalog();
+    return;
+  }
+  activeCategory=cat;
+  document.querySelectorAll('.cat-button').forEach(b=>b.classList.remove('active'));
+  button?.classList.add('active');
+  document.getElementById('showAllBtn').classList.remove('active');
+  renderCatalog(cat);
+  document.getElementById('productos').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function renderFeatured(){
+  const list=featuredNames.map(name=>products.find(p=>p.name.trim().toLowerCase()===name.trim().toLowerCase())).filter(Boolean);
+  document.getElementById('featuredGrid').innerHTML=list.length?list.map(productCard).join(''):'<div class="no-results">No se pudieron cargar los productos destacados.</div>';
+}
+
+function buildCategories(){
+  const grid=document.getElementById('categoryGrid');
+  const seen=[],counts={};
+  products.forEach(p=>{counts[p.cat]=(counts[p.cat]||0)+1;if(!seen.includes(p.cat))seen.push(p.cat)});
+  grid.innerHTML=seen.map(cat=>`<button class="cat cat-button" data-category="${esc(cat)}"><strong>${cat}</strong><span>${counts[cat]} productos</span></button>`).join('');
+}
+buildCategories();
+
+function openCheckout(){
+  if(!Object.keys(cart).length)return;
+  if(mode==='may' && cartTotal()<WHOLESALE_MIN){updateCart();return;}
+  document.getElementById('checkoutError').textContent='';
+  document.getElementById('checkoutSummary').innerHTML=buildSummary();
+  document.getElementById('checkoutModal').classList.add('open');
+  document.getElementById('clientName').focus();
+}
+
+function closeCheckout(){document.getElementById('checkoutModal').classList.remove('open')}
+
+function buildSummary(){
+  return Object.entries(cart).map(([name,q])=>{
+    const p=products.find(x=>x.name===name);
+    return `<div>• ${q} × ${p.name} — ${fmt(priceOf(p)*q)}</div>`;
+  }).join('')+`<strong class="summary-total">Total: ${fmt(cartTotal())}</strong>`;
+}
+
+function updateAddressField(){
+  const delivery=document.querySelector('input[name="delivery"]:checked')?.value;
+  const show=delivery==='Envío';
+  const field=document.getElementById('addressField');
+  field.classList.toggle('show',show);
+  const input=document.getElementById('clientAddress');
+  input.required=show;
+  input.disabled=!show;
+}
+
+function sendOrder(){
+  const name=document.getElementById('clientName').value.trim();
+  const delivery=document.querySelector('input[name="delivery"]:checked')?.value;
+  const address=document.getElementById('clientAddress').value.trim();
+  const error=document.getElementById('checkoutError');
+  if(!name||!delivery||(delivery==='Envío'&&!address)){
+    error.textContent=delivery==='Envío'?'Completá nombre y apellido y la dirección de envío.':'Completá nombre y apellido y elegí envío o retiro.';
+    return;
+  }
+  if(mode==='may' && cartTotal()<WHOLESALE_MIN)return;
+
+  let msg='Hola Química Jerusalén, quiero realizar un pedido.\n\n';
+  msg+=`Modalidad: ${mode==='may'?'Mayorista':'Minorista'}\n`;
+  msg+=`Nombre y apellido: ${name}\n`;
+  msg+=`Entrega: ${delivery}\n`;
+  if(delivery==='Envío')msg+=`Dirección: ${address}\n`;
+  msg+='\nProductos:\n';
+  Object.entries(cart).forEach(([productName,q])=>{
+    const p=products.find(x=>x.name===productName);
+    msg+=`- ${q} x ${productName} — ${fmt(priceOf(p)*q)}\n`;
+  });
+  msg+=`\nTotal: ${fmt(cartTotal())}\n`;
+  msg+='\nQuedo a la espera para coordinar pago, envío o retiro.';
+
+  const url='https://wa.me/5491134430701?text='+encodeURIComponent(msg);
+  window.open(url,'_blank');
+  closeCheckout();
+}
+
+document.querySelectorAll('.cat-button').forEach(btn=>btn.addEventListener('click',()=>chooseCategory(btn.dataset.category)));
+document.querySelectorAll('input[name="delivery"]').forEach(r=>r.addEventListener('change',updateAddressField));
+let searchWasActive=false;
+document.getElementById('search').addEventListener('input',()=>{
+  const q=document.getElementById('search').value.trim();
+  if(q){
+    activeCategory=null;
+    document.querySelectorAll('.cat-button').forEach(b=>b.classList.remove('active'));
+    document.getElementById('showAllBtn').classList.remove('active');
+    renderCatalog(null);
+    if(!searchWasActive){
+      document.getElementById('productos').scrollIntoView({behavior:'smooth',block:'start'});
+    }
+    searchWasActive=true;
+  }else if(activeCategory){
+    renderCatalog(activeCategory);
+    searchWasActive=false;
+  }else{
+    hideCatalog();
+    searchWasActive=false;
+  }
+});
+
+document.addEventListener('click',(e)=>{
+  const panel=document.getElementById('cartPanel');
+  if(panel.classList.contains('mini') && e.target.closest('#cartPanel') && !e.target.closest('#cartPanel button')){toggleCartMini();return;}
+  const add=e.target.closest('[data-add-product]');
+  if(add){addToCart(add.dataset.addProduct);return;}
+  const qty=e.target.closest('[data-qty-product]');
+  if(qty){changeQty(qty.dataset.qtyProduct,Number(qty.dataset.qtyDelta));return;}
+});
+
+document.getElementById('showAllBtn').addEventListener('click',showAllProducts);
+
+setMode('minor');
+renderFeatured();
+hideCatalog();
+updateCart();
+
+let headerTicking=false;
+function updateHeaderShrink(){
+  headerTicking=false;
+  document.body.classList.toggle('header-shrunk',window.scrollY>140);
+}
+window.addEventListener('scroll',()=>{
+  if(!headerTicking){requestAnimationFrame(updateHeaderShrink);headerTicking=true;}
+},{passive:true});
+updateHeaderShrink();
+</script>
+
+</html>
