@@ -6,7 +6,7 @@
       "command": ["npx", "-y", "@netlify/mcp"],
       "enabled": true,
       "environment": {
-        "NETLIFY_AUTH_TOKEN": "{env:NETLIFY_AUTH_TOKEN}"
+        "NETLIFY_AUTH_TOKEN": "{file:.netlify-token}"
       }
     }
   }
